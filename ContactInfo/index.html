@@ -18,8 +18,9 @@
         }
         body {
             margin: 0;
-            background-image: url(/Users/danye/Desktop/Life/Pic/c-back.jpg);
+            background-image: url(c-back.jpg);
             background-size: cover;
+            font-family: Arial, Helvetica, sans-serif;
         }
         ul.topNav {
             width: 100vw;
@@ -46,6 +47,16 @@
         @media (max-width: 600px) {
             ul.topNav li.name, ul.topNav li {
                 float: none;
+            }
+            ul.topNav li.name {
+                color: lightcoral;
+            }
+            header {
+                position: relative;
+                color: rgb(104, 169, 6);
+            }
+            body {
+                margin-top: 40%;
             }
         }
         ul.topNav li a {
@@ -78,15 +89,15 @@
 <body>
     <div>
         <ul class="topNav">
-            <li><a href="/Users/danye/Desktop/5610/Aliceintech.github.io/index.html">Home</a></li>
-            <li><a href="/Users/danye/Desktop/5610/Aliceintech.github.io/Projects/index.html">Projects</a></li>
-            <li><a href="/Users/danye/Desktop/5610/Aliceintech.github.io/Interests/index.html">Interests</a></li>
-            <li><a class="active" href="/Users/danye/Desktop/5610/Aliceintech.github.io/ContactInfo/index.html">ContactInfo</a></li>
             <li class="name">Dan/Alice Ye</li>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/Projects">Projects</a></li>
+            <li><a href="/Interests">Interests</a></li>
+            <li><a class="active" href="/ContactInfo">ContactInfo</a></li>
         </ul>
     </div>
 <header><h5>How to Contact Alice?</h5></header>
-<div><img src="/Users/danye/Desktop/5610/Aliceintech.github.io/ContactInfo/contact-icon.png" alt="contact method icon" width="300" height="100"></div>
+<div><img src="contact-icon.jpg" alt="contact method icon" width="300" height="100"></div>
 <div>
     <h2 class="methods">Contacts:</h2>
         <ul class="contact">

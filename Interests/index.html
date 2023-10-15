@@ -5,6 +5,7 @@
     <title>Alice Likes</title>
     <style>
         header {
+            position: sticky;
             text-align: center;
             top: 0px;
             font-size: xx-large;
@@ -12,8 +13,10 @@
         }
         body {
             margin: 0;
-            background-image: url(/Users/danye/Desktop/Life/Pic/i-back.jpg);
+            position: relative;
+            background-image: url(i-back.jpg);
             background-size: cover;
+            font-family: Arial, Helvetica, sans-serif;
         }
         ul.topNav {
             width: 100vw;
@@ -51,16 +54,18 @@
             background-color: burlywood;
         }
         .grid-container{
+            margin: 0;
             display: grid;
             width: 100vw;
             height: 100vh;
-            position: relative;
+            position: absolute;
             align-items: center;
             grid-template-areas: 
             "toplf topmid toprg"
             "left main right"
             "left main right"
             ;
+            left: 25px;
             grid-gap: 25px;
             grid-template-columns: 1fr 1fr 1fr;
             grid-template-rows: 1fr 1fr 1fr;
@@ -69,17 +74,28 @@
             ul.topNav li.name, ul.topNav li {
                 float: none;
             }
+            ul.topNav li.name {
+                color: lightcoral;
+            }
+            header {
+                position: relative;
+                color: rgb(104, 169, 6);
+            }
+            body {
+                margin-top: 40%;
+            }
             .grid-container {
+                position: static;
                 grid-template-areas: 
                 "toplf"
-                "topmid"
-                "toprg"
                 "left"
+                "topmid"
                 "main"
+                "toprg"
                 "right"
                 ;
                 grid-template-columns: 1fr;
-                grid-template-rows: 1fr 1fr 1fr 2fr 2fr 2fr;
+                grid-template-rows: 1fr;
             }
         }
         .top-left {
@@ -114,11 +130,11 @@
 <body>
     <div>
         <ul class="topNav">
-            <li><a href="/Users/danye/Desktop/5610/Aliceintech.github.io/index.html">Home</a></li>
-            <li><a href="/Users/danye/Desktop/5610/Aliceintech.github.io/Projects/index.html">Projects</a></li>
-            <li><a class="active" href="/Users/danye/Desktop/5610/Aliceintech.github.io/Interests/index.html">Interests</a></li>
-            <li><a href="/Users/danye/Desktop/5610/Aliceintech.github.io/ContactInfo/index.html">ContactInfo</a></li>
             <li class="name">Dan/Alice Ye</li>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/Projects">Projects</a></li>
+            <li><a class="active" href="/Interests">Interests</a></li>
+            <li><a href="/ContactInfo">ContactInfo</a></li>
         </ul>
     </div>
     <header><h5>What Alice likes?</h5></header>
@@ -133,13 +149,13 @@
             <p>Traveling</p>
         </div>
         <div class="left">
-            <img src="/Users/danye/Desktop/Life/Pic/pumkin.jpg" alt="Picture of farm view" width="450" height="550">
+            <img src="field.jpg" alt="Picture of field view" width="450" height="550">
         </div>
         <div class="main">
-            <img src="/Users/danye/Desktop/Life/Pic/IMG_4471.jpg" alt="Picture of food" width="450" height="550">
+            <img src="food.jpg" alt="Picture of food" width="450" height="550">
         </div>
         <div class="right">
-            <img src="/Users/danye/Desktop/Life/Pic/IMG_1177.jpg" alt="Picture of traveling" width="450" height="550">
+            <img src="IMG_4467.jpg" alt="Picture of traveling" width="450" height="550">
         </div>
 
     </div>

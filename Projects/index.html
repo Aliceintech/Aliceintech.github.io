@@ -12,7 +12,7 @@
         }
         body {
             margin: 0;
-            background-image: url(/Users/danye/Desktop/Life/Pic/p-back.jpg);
+            background-image: url(p-back.jpg);
             background-size: cover;
             font-family: Arial, Helvetica, sans-serif;
         }
@@ -42,6 +42,16 @@
             ul.topNav li.name, ul.topNav li {
                 float: none;
             }
+            ul.topNav li.name {
+                color: lightcoral;
+            }
+            header {
+                position: relative;
+                color: rgb(104, 169, 6);
+            }
+            body {
+                margin-top: 40%;
+            }
         }
         ul.topNav li a {
             display: block;
@@ -68,8 +78,10 @@
             align-items: center;
         }
         .demo {
+            margin-top: 150px;
             display: flex;
             align-items: center;
+            text-align: center;
             justify-content: center;
         }
     </style>
@@ -77,11 +89,11 @@
 <body>
     <div>
         <ul class="topNav">
-            <li><a href="/Users/danye/Desktop/5610/Aliceintech.github.io/index.html">Home</a></li>
-            <li><a class="active" href="/Users/danye/Desktop/5610/Aliceintech.github.io/Projects/index.html">Projects</a></li>
-            <li><a href="/Users/danye/Desktop/5610/Aliceintech.github.io/Interests/index.html">Interests</a></li>
-            <li><a href="/Users/danye/Desktop/5610/Aliceintech.github.io/ContactInfo/index.html">ContactInfo</a></li>
             <li class="name">Dan/Alice Ye</li>
+            <li><a href="/index.html">Home</a></li>
+            <li><a class="active" href="/Projects">Projects</a></li>
+            <li><a href="/Interests">Interests</a></li>
+            <li><a href="/ContactInfo">ContactInfo</a></li>
         </ul>
     </div>
     <header><h5>What Alice has made?</h5></header>
@@ -89,7 +101,7 @@
     <div class="link">
         <a href="https://github.khoury.northeastern.edu/cs5001-f22-sea-ad/student-Dan-Ye.git">Github Repo - Final-project</a>
     </div>
-    <div>
+    <div class="demo">
         <vedio width="450" height="450">
             <source src="" type="vedio/mp4">
             Sorry, your browser does not support this type of video.
