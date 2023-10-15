@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <meta charset="utf-8">
+    <title>Alice Likes</title>
+    <style>
+        header {
+            text-align: center;
+            top: 0px;
+            font-size: xx-large;
+            color: lightcoral;
+        }
+        body {
+            margin: 0;
+            background-image: url(/Users/danye/Desktop/Life/Pic/p-back.jpg);
+            background-size: cover;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        ul.topNav {
+            width: 100vw;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: darkslategray;
+            position: fixed;
+            top: 0;
+        }
+        ul.topNav li {
+            float: left;
+        }
+        ul.topNav li.name {
+            color: rgb(238, 238, 48);
+            float: right;
+            font-size: 18px;
+            font-weight: bold;
+            display: block;
+            text-align: center;
+            padding: 10px 10px;
+        }
+        @media (max-width: 600px) {
+            ul.topNav li.name, ul.topNav li {
+                float: none;
+            }
+        }
+        ul.topNav li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 10px 10px;
+            transition: .5s;
+            }
+        ul.topNav li a:hover{
+            background-color: chocolate;
+        }
+        ul.topNav li a.active {
+            background-color: burlywood;
+        }
+        .tittle-p {
+            text-align: center;
+            font-weight: bold;
+            font-size: x-large;
+            text-decoration: wavy;
+        }
+        .link {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ul class="topNav">
+            <li><a href="/Users/danye/Desktop/5610/Aliceintech.github.io/Homepage/index.html">Home</a></li>
+            <li><a class="active" href="/Users/danye/Desktop/5610/Aliceintech.github.io/Projects/index.html">Projects</a></li>
+            <li><a href="/Users/danye/Desktop/5610/Aliceintech.github.io/Interests/index.html">Interests</a></li>
+            <li><a href="/Users/danye/Desktop/5610/Aliceintech.github.io/ContactInfo/index.html">ContactInfo</a></li>
+            <li class="name">Dan/Alice Ye</li>
+        </ul>
+    </div>
+    <header><h5>What Alice has made?</h5></header>
+    <div class="tittle-p">Python Project</div>
+    <div class="link">
+        <a href="https://github.khoury.northeastern.edu/cs5001-f22-sea-ad/student-Dan-Ye.git">Github Repo</a>
+    </div>
+</body>
+</html>

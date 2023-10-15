@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <meta charset="utf-8">
+    <title>Alice Likes</title>
+    <style>
+        header {
+            text-align: center;
+            top: 0px;
+            font-size: xx-large;
+            color: lightcoral;
+        }
+        body {
+            margin: 0;
+            background-image: url(/Users/danye/Desktop/Life/Pic/i-back.jpg);
+            background-size: cover;
+        }
+        ul.topNav {
+            width: 100vw;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: darkslategray;
+            position: fixed;
+            top: 0;
+        }
+        ul.topNav li {
+            float: left;
+        }
+        ul.topNav li.name {
+            color: rgb(238, 238, 48);
+            float: right;
+            font-size: 18px;
+            font-weight: bold;
+            display: block;
+            text-align: center;
+            padding: 10px 10px;
+        }
+        ul.topNav li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 10px 10px;
+            transition: .5s;
+            }
+        ul.topNav li a:hover{
+            background-color: chocolate;
+        }
+        ul.topNav li a.active {
+            background-color: burlywood;
+        }
+        .grid-container{
+            display: grid;
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+            align-items: center;
+            grid-template-areas: 
+            "toplf topmid toprg"
+            "left main right"
+            "left main right"
+            ;
+            grid-gap: 25px;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+        }
+        @media (max-width: 600px) {
+            ul.topNav li.name, ul.topNav li {
+                float: none;
+            }
+            .grid-container {
+                grid-template-areas: 
+                "toplf"
+                "topmid"
+                "toprg"
+                "left"
+                "main"
+                "right"
+                ;
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr 1fr 2fr 2fr 2fr;
+            }
+        }
+        .top-left {
+            grid-area: toplf;
+            display: block;
+            text-align: center;
+        }
+        .top-mid{
+            grid-area: topmid;
+            display: block;
+            text-align: center;
+        }
+        .top-right {
+            grid-area: toprg;
+            display: block;
+            text-align: center;
+        }
+        .left {
+            display: block;
+            grid-area: left;
+        }
+        .main {
+            display: block;
+            grid-area: main;
+        }
+        .right {
+            display: block;
+            grid-area: right;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ul class="topNav">
+            <li><a href="/Users/danye/Desktop/5610/Aliceintech.github.io/Homepage/index.html">Home</a></li>
+            <li><a href="/Users/danye/Desktop/5610/Aliceintech.github.io/Projects/index.html">Projects</a></li>
+            <li><a class="active" href="/Users/danye/Desktop/5610/Aliceintech.github.io/Interests/index.html">Interests</a></li>
+            <li><a href="/Users/danye/Desktop/5610/Aliceintech.github.io/ContactInfo/index.html">ContactInfo</a></li>
+            <li class="name">Dan/Alice Ye</li>
+        </ul>
+    </div>
+    <header><h5>What Alice likes?</h5></header>
+    <div class="grid-container">
+        <div class="top-left">
+            <p>Photography</p>
+        </div>
+        <div class="top-mid">
+            <p>Food</p>
+        </div>
+        <div class="top-right">
+            <p>Traveling</p>
+        </div>
+        <div class="left">
+            <img src="/Users/danye/Desktop/Life/Pic/pumkin.jpg" alt="Picture of farm view" width="450" height="550">
+        </div>
+        <div class="main">
+            <img src="/Users/danye/Desktop/Life/Pic/IMG_4471.jpg" alt="Picture of food" width="450" height="550">
+        </div>
+        <div class="right">
+            <img src="/Users/danye/Desktop/Life/Pic/IMG_1177.jpg" alt="Picture of traveling" width="450" height="550">
+        </div>
+
+    </div>
+</body>
+</html>
