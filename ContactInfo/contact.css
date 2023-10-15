@@ -1,0 +1,21 @@
+img {
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+body {
+    background-image: url(c-back.jpg);
+}
+.methods {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 50px;
+    text-shadow: 2px 2px;
+}
+ul.contact {
+    list-style: square;
+    font-size: 25px;
+    font-style: oblique;
+    text-align: center;
+}

@@ -1,101 +1,11 @@
-//Navbar has reference to this web: https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_horizontal_responsive
+<!--Navbar has reference to this web: https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_horizontal_responsive-->
 <!DOCTYPE html>
 <html>
 <head> 
     <meta charset="utf-8">
     <title>Alice in Wonderland</title>
-    <style>
-        body {
-            margin: 0;
-            position: absolute;
-            background-image: url(h-back.jpg);
-            background-size: cover;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-    
-        header {
-            text-align: center;
-            top: 0px;
-            font-size: xx-large;
-            color: lightcoral;
-        }
-        ul.topNav {
-            width: 100vw;
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background-color: darkslategray;
-            position: fixed;
-            top: 0;
-        }
-        ul.topNav li {
-            float: left;
-        }
-        ul.topNav li.name {
-            color: rgb(238, 238, 48);
-            float: right;
-            font-size: 18px;
-            font-weight: bold;
-            display: block;
-            text-align: center;
-            padding: 10px 10px;
-        }
-        @media (max-width: 600px) {
-            ul.topNav li.name, ul.topNav li {
-                float: none;
-            }
-            ul.topNav li.name {
-                color: lightcoral;
-            }
-            header {
-                position: relative;
-                color: rgb(104, 169, 6);
-            }
-            body {
-                margin-top: 20%;
-            }
-        }
-        ul.topNav li a {
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 10px 10px;
-            transition: .5s;
-            }
-        ul.topNav li a:hover{
-            background-color: chocolate;
-        }
-        ul.topNav li a.active {
-            background-color: burlywood;
-        }
-        ul.skill li {
-            list-style: circle;
-            margin: auto;
-            font-style: Arial ;
-            font-size: larger;
-        }
-        .tittle-main {
-            padding-left: 15px;
-        }
-        p {
-            margin: auto;
-            padding-left: 50px;
-            font-family: 'Times New Roman', Times, serif;
-            font-size: medium;
-        }
-        .tittle-1 {
-            padding-left: 30px;
-        }
-        .tittle-2{
-            font-style: italic;
-        }
-        .tittle-3{
-            font-size: large;
-            font-style: oblique;
-            text-decoration: underline;
-        }
-    </style>
+    <link href="/common.css" rel="stylesheet">
+    <link href="homepage.css" rel="stylesheet">
 </head>
 <body>
 <div>
@@ -117,7 +27,7 @@
     </ul>
     <div class="maincontent">
         <h2 class="tittle-main">Professional Expirence:</h2>
-        <h3 class="tittle-1">WEEE! INC, SEATTLE, WA, NOVEMBER 2022 TO PRESENT</h3>
+        <h3 class="tittle-1">XXX INC, SEATTLE, WA, NOVEMBER 2022 TO PRESENT</h3>
             <p class="tittle-2">BUYER - GROCERY CATEGORY</p>
             <p>● Implemented impactful product assortment strategies aligned with customer needs, resulting in a 20% increase in
             average product availability within the initial quarter across a diverse range of over 1000 SKUs.</p>

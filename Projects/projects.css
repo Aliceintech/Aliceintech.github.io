@@ -1,0 +1,21 @@
+body {
+    background-image: url(p-back.jpg);
+}
+.tittle-p {
+    text-align: center;
+    font-weight: bold;
+    font-size: x-large;
+    text-decoration: wavy;
+}
+.link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.demo {
+    margin-top: 150px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}

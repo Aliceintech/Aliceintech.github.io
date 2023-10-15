@@ -1,0 +1,29 @@
+body {
+    background-image: url(h-back.jpg);
+}
+ul.skill li {
+    list-style: circle;
+    margin: auto;
+    font-style: Arial ;
+    font-size: larger;
+}
+.tittle-main {
+    padding-left: 15px;
+}
+p {
+    margin: auto;
+    padding-left: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+}
+.tittle-1 {
+    padding-left: 30px;
+}
+.tittle-2{
+    font-style: italic;
+}
+.tittle-3{
+    font-size: large;
+    font-style: oblique;
+    text-decoration: underline;
+}
