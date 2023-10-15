@@ -13,9 +13,20 @@ body {
     align-items: center;
 }
 .demo {
-    margin-top: 150px;
+    margin-top: 50px;
     display: flex;
     align-items: center;
     text-align: center;
     justify-content: center;
+}
+video{
+    display: block;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (max-width: 600px) {
+    video {
+        width: 75%;
+    }
 }
